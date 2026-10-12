@@ -1,0 +1,12 @@
+=> Topics that covers in this module:-
+
+- What is Spring Framework.
+- What is Spring Boot.
+- Differences between Spring & Spring Boot.
+- IOC container.
+- Dependency Injection.
+- Stereotype Annotations.
+- Spring Boot Overview.
+- Pros & Cons of Spring Boot.
+- Approaches to create Spring Boot Application.
+- Application with Spring Boot.
