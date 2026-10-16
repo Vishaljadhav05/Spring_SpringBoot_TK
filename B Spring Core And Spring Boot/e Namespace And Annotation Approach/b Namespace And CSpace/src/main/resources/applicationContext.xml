@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	
+	
+	xmlns:p= "http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+
+	
+
+    <!-- Configuration tags go here -->
+	<bean class="com.services.Department" id="department" c:deptId="1" c:deptName="Sales"/>
+
+    <bean class="com.services.Employee" id="emp" p:id="01" p:name="Vishal" p:salary="2000000.80" p:city="Indore" p:department-ref = "department"/>              
+
+</beans>
