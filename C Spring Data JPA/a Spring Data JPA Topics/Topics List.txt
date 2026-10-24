@@ -1,0 +1,7 @@
+=> Topics that covers in this module:-
+
+- Spring Data JPA Introduction.
+- Spring ORM vs Spring Data JPA.
+- Working with CurdRepository.
+- Working with PagingAndRepository.
+- Working with JpaRepository.
