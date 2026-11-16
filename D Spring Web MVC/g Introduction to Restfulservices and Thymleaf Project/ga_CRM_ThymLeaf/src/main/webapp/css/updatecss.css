@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* --- Form Layout Styling --- */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focused input wrapper accent lines */
+.form-group input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    border-top: 1px solid #ecf0f1;
+    padding-top: 20px;
+}
+
+/* Unified actionable form controls */
+.btn-save {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 20px;
+}
+
+.btn-save:hover {
+    background-color: #27ae60;
+}
+
+.btn-cancel {
+    background-color: #95a5a6;
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn-cancel:hover {
+    background-color: #7f8c8d;
+}

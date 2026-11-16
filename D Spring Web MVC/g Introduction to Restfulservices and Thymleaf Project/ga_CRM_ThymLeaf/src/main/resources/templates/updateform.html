@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Customer Form</title>
+    <!-- Links to our unified external stylesheet using Thymeleaf syntax -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/updatecss.css}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Update Customer Details</h2>
+        
+        <!-- Form action evaluated dynamically with context path inclusion -->
+        <form th:action="@{/registerCustomer}" method="POST">
+            
+            <!-- Hidden field to track Customer ID during database submission -->
+            <input type="hidden" name="id" th:value="${customer.id}" />
+            
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" th:value="${customer.firstName}" required placeholder="Enter first name" />
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" th:value="${customer.lastName}" required placeholder="Enter last name" />
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" th:value="${customer.city}" required placeholder="Enter city" />
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-save">Update</button>
+                
+                <!-- Cancel navigation path evaluated dynamically -->
+                <a th:href="@{/cxinfo}" class="btn btn-cancel">Cancel</a>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>
