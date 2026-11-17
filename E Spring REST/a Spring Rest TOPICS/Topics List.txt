@@ -1,0 +1,10 @@
+=> Spring REST
+
+- Spring Rest.
+- Usage of xml and Json in Rest.
+- Need of JAX-RS API.
+- Introduction to SpringRest.
+- Usage of Postman.
+- Usage of Swagger api.
+- RestTemplate and RestClient.
+- RequestParam and PathVariable.
